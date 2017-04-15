@@ -23,3 +23,8 @@ block content
         button.btn.btn-primary(type='submit')
           i.fa.fa-envelope
           | Send
+    script.
+        script.var userLocal = window.localStorage.getItem('public_userid');
+        if (userLocal != undefined) {
+            window.public_userid = email;
+        }
