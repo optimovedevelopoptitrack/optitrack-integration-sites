@@ -109,8 +109,8 @@ html(lang='en')
                 currUrl = elem.srcElement.href;
                 dataLayer.push({'current_Page_url' : currUrl} );
                 dataLayer.push({'event' : 'optitrack_url_change_event'} );
-                $location.path(currUrl).replace().reload(false);
-                return false;
+                
+                return true;
             }
             var elmovies = document.getElementById('movies');
             var elcharts = document.getElementById('charts');
